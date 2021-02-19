@@ -1,0 +1,182 @@
+/* .start-button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    border-radius: 10px;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+} */
+
+.start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(0deg) translateY(0);
+    margin: 0;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    background: rgba(0,0,0,.5);
+    transition: transform 0.15s, box-shadow 0.15s;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+}
+    .start-button:hover {
+      box-shadow: 0px 5px 0px #0a979d;
+      border-radius: 8px;
+      transform: translate(-50%, -50%) rotateX(30deg) translateY(0);
+    }
+    
+    .start-button:hover:active {
+      text-shadow: 0 0 4px #0ebec6;
+      box-shadow: 0 1px 0 #423847;
+      background: #0ebec6;
+      transition: transform 0.05s, box-shadow 0.05s;
+      transform: translate(-50%, -50%) rotateX(30deg) translateY(4px);
+    }
+  #count{
+  font-size: 10rem;
+  color: white;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+  .father-of-question-box{
+    display: none;
+  }
+  .question-container{
+    display: none;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: auto;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+  } 
+  .question-box{
+    background-color: rgba(0,0,0,.5);
+    height: auto;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    color: white;
+  }
+  .question-content{
+    font-size: 4rem;
+    line-height: 60px;
+  }
+  input[type=radio] {
+    display: none;
+}
+input[type=radio]:checked + label {
+  background:  #0ebec6;
+  color: #FAFAFA;
+}
+  .answer-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .answer{
+    display: block;
+    line-height: 45px;
+    background-color: rgba(0,0,0,.5);
+    height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  .appear{
+    display: block;
+  }
+  .answer:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  .md-icon-button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    border: none;
+    margin: 10px;
+    cursor: pointer;
+  }
+  .md-button.md-primary.md-raised{
+    background-color: #03e9f4;
+  }
+  .md-button.md-raised{
+    font-size: 2rem;
+    color: white;
+    background-color: black;
+  }
+  .md-button.md-primary.md-raised:not([dissble]).md-focused{
+    background-color: #03e9f4;
+  }
+  .md-button.md-primary.md-raised:not([dissble]):hover{
+    background-color: #03e9f4;
+  }
+  .md-ripple-container{
+    display: none;
+  }
+  .md-button.md-raised:not([disabled]):hover{
+    color: black;
+  }
+  .paging-box{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    padding: 5px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(0 0 0 / 60%);
+    border-radius: 50px;
+  }
+  .submit-btn{
+    position: absolute;
+    top: 65%;
+    left: 85%;
+    width: 100px;
+    height: 40px;
+    padding: 0px;
+    border: none;
+    transform: translate(-50%, -50%);
+    background: none;
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    outline-color: #03e9f4;
+    cursor: pointer;
+    outline: none;
+  }
+  .submit-btn:hover{
+    background-color: #03e9f4;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+  }
+    
+  

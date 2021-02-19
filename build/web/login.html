@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Quiz</title>
+    <link rel="stylesheet" href="./asset/css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="login-box main-box">
+        <h2>Login</h2>
+        <form action="login" method="POST">
+          <div class="user-box">
+            <input type="text" name="txtEmail" required="">
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="password" name="txtPassword" required="">
+            <label>Password</label>
+          </div>
+          <button class="btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Sign in
+          </button>
+          <p class="message">Not registered? <a style="padding: 5px; color: #fff;" href="#">Create an account</a></p>
+        </form>
+        
+    </div>
+    <div class="register-box main-box">
+      <h2>Register</h2>
+      <form action="register" method="POST">
+        <div class="user-box">
+          <input type="text" name="txtEmail" required="" autocomplete="off">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="txtName" required="" autocomplete="off">
+          <label>Name</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="txtPassword" required="">
+          <label>Password</label>
+        </div>
+        <div class="user-box">
+          <input type="password" name="txtConfirmPass" required="">
+          <label>Confirm Password</label>
+        </div>
+        <button class="btn">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Sign up
+        </button>
+        <p class="message">Already registered? <a style="padding: 5px; color: #fff;" href="#">Sign In</a></p>
+      </form>
+      
+  </div>
+  <script src="./asset/js/login.js"></script>
+  
+</body>
+</html>
